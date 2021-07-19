@@ -116,10 +116,11 @@ typeof 12 // number
 typeof undefined // undefined
 typeof true // boolean
 typeof 10n // bigint
-typeof null // object
 typeof Symbol("id") // "symbol"
+typeof null // object
 ```
 
 ### Why is null an object
 
 This is a bug which states that null is an object and one that unfortunately can’t be fixed because it would break the existing code of people.
+```
