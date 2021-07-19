@@ -1,12 +1,12 @@
 ## Data types
 
-** A value in JavaScript is always of a certain type. For example, a string or a number. **
+**A value in JavaScript is always of a certain type. For example, a string or a number.**
 
 The latest ECMAScript standard defines nine types. Seven data types are primitives and two data types is non-primitive. So the fundamental difference between primitive and non-primitive is that primitive values are immutable and non-primitive values are mutable.
 Mutable values are those which can be modified after creation.
 Immutable values are those which cannot be modified after creation
 
-**Primitives data types **
+**Primitives data types**
 
 * String
 * Number
@@ -16,7 +16,7 @@ Immutable values are those which cannot be modified after creation
 * null 
 * Symbol
 
-** non-primitive (Structural Types) ** 
+**non-primitive (Structural Types)** 
 
 * Object 
 * Function
@@ -37,7 +37,7 @@ Backticks are “extended functionality” quotes. They allow us to embed variab
 ```js
 let userName = "Sachin"
 
-console.log(`Hello, ${userName}`) // Hello, Sachin
+console.log(`Hello, ${userName}`) // "Hello, Sachin"
 ```
 
 ### Number
@@ -116,4 +116,10 @@ typeof 12 // number
 typeof undefined // undefined
 typeof true // boolean
 typeof 10n // bigint
+typeof null // object
+typeof Symbol("id") // "symbol"
 ```
+
+### Why is null an object
+
+This is a bug which states that null is an object and one that unfortunately can’t be fixed because it would break the existing code of people.
