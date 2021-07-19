@@ -1,12 +1,12 @@
 ## Data types
 
-** A value in JavaScript is always of a certain type. For example, a string or a number. **
+**A value in JavaScript is always of a certain type. For example, a string or a number.**
 
 The latest ECMAScript standard defines nine types. Seven data types are primitives and two data types is non-primitive. So the fundamental difference between primitive and non-primitive is that primitive values are immutable and non-primitive values are mutable.
 Mutable values are those which can be modified after creation.
 Immutable values are those which cannot be modified after creation
 
-**Primitives data types **
+**Primitives data types**
 
 * String
 * Number
