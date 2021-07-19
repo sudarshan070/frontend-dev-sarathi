@@ -16,7 +16,7 @@ Immutable values are those which cannot be modified after creation
 * null 
 * Symbol
 
-** non-primitive (Structural Types) ** 
+**non-primitive (Structural Types)** 
 
 * Object 
 * Function
