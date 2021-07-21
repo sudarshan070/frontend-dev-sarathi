@@ -8,6 +8,8 @@
  * Logical Operators
  * Conditional Operators
 
+**[Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)**
+
 ### Arithmetic Operators
 
  Arithmetic operators are used to perform mathematical operations between numeric operands.
