@@ -119,9 +119,9 @@ a <= c; // returns true
 
 ### Logical Operators
 
-OR `||`
-AND `&&`
-NOT `!`
+* OR `||`
+* AND `&&`
+* NOT `!`
 
 #### OR (||) Operator
 
@@ -174,7 +174,7 @@ alert( false && false ); // false
 * If all operands have been evaluated (i.e. all were truthy), returns the last operand.
 
 
-#### NOT ! Operator
+#### NOT (!) Operator
 
 The boolean NOT operator is represented with an exclamation sign !.
 
