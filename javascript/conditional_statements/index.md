@@ -4,7 +4,7 @@
 
 ### if...else
 
-The if statement executes a statement if a specified condition is [truthy](https://medium.com/@shindesudarshan070/truthy-and-falsy-values-in-javascript-253b705f2f72). If the condition is [falsy](https://medium.com/@shindesudarshan070/truthy-and-falsy-values-in-javascript-253b705f2f72), another statement can be executed.
+The if statement evaluates the expression inside the parenthesis. if the result is true, it executes the block of code. If the result is false, the code inside the else block will be executed.
 
 ```js
 if (condition) {
@@ -80,3 +80,5 @@ switch (a) {
     alert( "I don't know such values" );
 }
 ```
+
+[truthy and falsy values in javascript](https://medium.com/@shindesudarshan070/truthy-and-falsy-values-in-javascript-253b705f2f72).
