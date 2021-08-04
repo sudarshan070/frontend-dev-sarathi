@@ -233,3 +233,51 @@ let num = [0, 1, 2, 3, 4, 5]
 num.splice(6,0,6)
 console.log(num) //  [0, 1, 2, 3, 4, 5, 6]
 ```
+
+### Array.filter()
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function. It will return same size of array or smaller than.
+
+```js
+let arr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
+let filterArr =  arr.filter(e => e.length > 5)
+console.log(filterArr) // ["Aniket", "Krushna", "Mayank", "Sachin"]
+
+
+let num = [0, 1, 2, 3, 4, 5]
+let filterNum = num.filter(e => e % 2 == 0)
+console.log(filterNum) // [0, 2, 4]
+```
+
+### Array.forEach()
+
+The forEach() method executes a provided function once for each array element. forEach return undefined.
+
+```js
+let arr = ["Aniket", "Krushna", "Mayank"]
+arr.forEach(e => console.log(e))
+// Aniket
+// krushna
+// Mayank
+```
+
+
+### Array.map()
+
+The map() method creates a new array populated with the results of calling a provided function on every element in the calling array. Return same size of array.
+
+```js
+let arr = [ 1, 2, 3, 4, 5]
+let mapArr = arr.map(num => num * 2) 
+console.log(mapArr) // [2, 4, 6, 8, 10]
+```
+
+### Array.reduce()
+
+The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+
+```js
+let arr = [ 1, 2, 3, 4, 5]
+let reduceArr = arr.reduce((acc ,cv) => acc + cv, 0)
+console.log(reduceArr) // 15
+```
