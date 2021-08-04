@@ -92,6 +92,8 @@ console.log(arr) // [1, 2, 3, 4, 5, 6, 7, 8]
 
 ### Array.every() 
 
+The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+
 ```js
 let arr2 = [5, 6, 7,8]
 
@@ -114,6 +116,8 @@ console.log(arr)  // [5, 6, 5, 5]
 
 ### Array.find()
 
+The find() method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+
 ```js
 let arr = [89,12, 34, 74, 87, 90]
 
@@ -121,6 +125,8 @@ console.log(arr.find(ele => ele < 90 )) // 89
 ```
 
 ### Array.findIndex()
+
+The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.
 
 ```js
 let arr = [89,12, 34, 74, 87, 90]
@@ -134,12 +140,16 @@ newArr.findIndex(ele => ele == "Virat") // 5
 
 ### Array.flat()
 
+The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+
 ```js
 let arr = [89,12, 34, 74, 87, 90,[1,2,3]]
 console.log(arr.flat()) // [89, 12, 34, 74, 87, 90, 1, 2, 3]
 ```
 
 ### Array.includes()
+
+The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
@@ -149,6 +159,8 @@ newArr.includes("Aniket") //true
 ```
 
 ### Array.indexOf()
+
+The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat", "Mayank"]
@@ -166,6 +178,7 @@ console.log(newArr.join()) // "Aniket,Krushna,Mayank,Sachin,Rohit,Virat,Mayank"
 
 ### Array.reverse()
 
+The reverse() method reverses an array. The first array element becomes the last, and the last array element becomes the first.
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
 
@@ -173,6 +186,8 @@ console.log(newArr.reverse()) // ["Virat", "Rohit", "Sachin", "Mayank", "Krushna
 ```
 
 ### Array.slice()
+
+The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array.
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
@@ -182,6 +197,8 @@ console.log(newArr.slice(1,4)) //  ["Krushna", "Mayank", "Sachin"]
 
 
 ### Array.some()
+
+The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false.
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
@@ -193,8 +210,19 @@ let arr1 = [1, 2, 3, 4]
 console.log(arr1.some(e => e % 2 == 0)) //true
 ```
 
+### Array.sort()
 
+The sort() method sorts the elements of an array and returns the sorted array.
+
+```js
+let arr = [1,4,3,2,5,7,6,9,0,8]
+ console.log(arr.sort()) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+ console.log(arr.sort((a,b) => b - a)) // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
 ### Array.splice()
+
+The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements.
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
