@@ -3,12 +3,13 @@
 In JavaScript, arrays can be a collection of elements of any type. This means that you can create an array with elements of type String, Boolean, Number, Objects, and even other Arrays. 
 
 ```js
-let array = [1, 'a', 'sarathi' {a: "one", b: "two"}, [1,2,3]]
+let array = [1, 'a', 'sarathi', {a: "one", b: "two"}, [1,2,3]]
 ```
 
 There are two syntaxes for creating an empty array.
 ```js
 let arr = new Array()
+
  arr = []
 ```
 
@@ -30,7 +31,9 @@ The push() method adds one or more elements to the end of an array and returns t
 
 ```js
 let arr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit"]
+
 arr.push("Virat")
+
 console.log(arr) // ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
 ```
 
@@ -40,9 +43,10 @@ The pop() method removes the last element from an array and returns that element
 
 ```js
 let arr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit"]
-console.log(arr.pop()) // "Rohit"
-console.log(arr) // ["Aniket", "Krushna", "Mayank", "Sachin"]
 
+console.log(arr.pop()) // "Rohit"
+
+console.log(arr) // ["Aniket", "Krushna", "Mayank", "Sachin"]
 ```
 
 ### Array.shift()
@@ -51,7 +55,9 @@ The shift() method removes the first element from an array and returns that remo
 
 ```js
 let arr  = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
+
 arr.shift()
+
 console.log(arr) // ["Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
 ```
 
@@ -62,7 +68,9 @@ The unshift() method adds one or more elements to the beginning of an array and 
 
 ```js
 let arr = ["Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
+
 arr.unshift("Aniket")
+
 console.log(arr) // ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
 ```
 
@@ -108,6 +116,7 @@ The fill() method changes the all elements in an array. It return modified array
 
 ```js
 let arr2 = [5, 6, 7,8]
+
 let arr = arr2.fill(5, 2)
 
 console.log(arr)  // [5, 6, 5, 5] 
@@ -144,6 +153,7 @@ The flat() method creates a new array with all sub-array elements concatenated i
 
 ```js
 let arr = [89,12, 34, 74, 87, 90,[1,2,3]]
+
 console.log(arr.flat()) // [89, 12, 34, 74, 87, 90, 1, 2, 3]
 ```
 
@@ -164,6 +174,7 @@ The indexOf() method returns the first index at which a given element can be fou
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat", "Mayank"]
+
 newArr.indexOf("Mayank") // 2
 
 newArr.indexOf("Mayank", 4) // 6
@@ -173,6 +184,7 @@ newArr.indexOf("Mayank", 4) // 6
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat", "Mayank"]
+
 console.log(newArr.join()) // "Aniket,Krushna,Mayank,Sachin,Rohit,Virat,Mayank"
 ```
 
@@ -202,11 +214,14 @@ The some() method tests whether at least one element in the array passes the tes
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
+
 console.log(newArr.some(ele => ele == "aniket")) // false
+
 console.log(newArr.some(ele => ele == "Aniket")) // true
 
 
 let arr1 = [1, 2, 3, 4]
+
 console.log(arr1.some(e => e % 2 == 0)) //true
 ```
 
@@ -216,6 +231,7 @@ The sort() method sorts the elements of an array and returns the sorted array.
 
 ```js
 let arr = [1,4,3,2,5,7,6,9,0,8]
+
  console.log(arr.sort()) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
  console.log(arr.sort((a,b) => b - a)) // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
@@ -226,7 +242,9 @@ The splice() method changes the contents of an array by removing or replacing ex
 
 ```js
 let newArr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
+
 newArr.splice(1,0,"Rahul")
+
 console.log(newArr) //  ["Aniket", "Rahul", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
 
 let num = [0, 1, 2, 3, 4, 5]
@@ -240,12 +258,16 @@ The filter() method creates a new array with all elements that pass the test imp
 
 ```js
 let arr = ["Aniket", "Krushna", "Mayank", "Sachin", "Rohit", "Virat"]
+
 let filterArr =  arr.filter(e => e.length > 5)
+
 console.log(filterArr) // ["Aniket", "Krushna", "Mayank", "Sachin"]
 
 
 let num = [0, 1, 2, 3, 4, 5]
+
 let filterNum = num.filter(e => e % 2 == 0)
+
 console.log(filterNum) // [0, 2, 4]
 ```
 
@@ -255,6 +277,7 @@ The forEach() method executes a provided function once for each array element. f
 
 ```js
 let arr = ["Aniket", "Krushna", "Mayank"]
+
 arr.forEach(e => console.log(e))
 // Aniket
 // krushna
@@ -268,7 +291,9 @@ The map() method creates a new array populated with the results of calling a pro
 
 ```js
 let arr = [ 1, 2, 3, 4, 5]
+
 let mapArr = arr.map(num => num * 2) 
+
 console.log(mapArr) // [2, 4, 6, 8, 10]
 ```
 
@@ -278,6 +303,8 @@ The reduce() method executes a reducer function (that you provide) on each eleme
 
 ```js
 let arr = [ 1, 2, 3, 4, 5]
+
 let reduceArr = arr.reduce((acc ,cv) => acc + cv, 0)
+
 console.log(reduceArr) // 15
 ```
