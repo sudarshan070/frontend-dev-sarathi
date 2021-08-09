@@ -91,7 +91,7 @@ The slice() method extracts a section of a string and returns it as a new string
 ```js
 let str = "Sarathi frontend development"
 
-console.log(str.slice(4)) // frontend development
+console.log(str.slice(6)) // frontend development
 console.log(str.slice(0, 12)) // Sarathi fron
 ```
 
