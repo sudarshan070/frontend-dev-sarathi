@@ -73,7 +73,27 @@ console.log(a--) // 4
  x %= 2; //x would be 1
 
  x **= 2 // x would be 25
+   
+   //Add Assignment Operators example function sum(a + b){}
+   let sum = 0 
+
+for(let i = 1; i <= 5; i++)
+{
+ sum += i
+} 
+console.log(sum)// statement is use to print the output of our program.
+//This is the simple loop addition program in js with the increasing of i++ our sum will also increases upto the given last condition.
+
+for(let i=1; i<= 5 ++i)
+{
+sum+ =i;
+}
+console.log(sum)
+// In this secound example we can see the little change, will it effect for output. The answer is no both the answer will be same as above.
+
+
  ```
+
 
 
  ### Comparison Operators
@@ -114,6 +134,33 @@ a <= b; // returns true
 a >= c; // returns true
 
 a <= c; // returns true
+
+//Now let us understand What is the difference between  Equal(==) vs Strick Equal (===)
+//If we look according to there operation both does same work but there is a small difference which make them different 
+// Equal(==):= This is  used for comparison purposes. == compares two variables irrespective of data type,it has the simple operation of comparison.
+//Example of Equal(==)
+// TO understand it more clearly we will consider a simplke example 
+// let a=10 We have to perform the operation of comparision a==10; the output of perticular example is true because it will compare  10 with the value of a Which is 10 .
+//It will give output false only when the values are not same.
+
+//Strick Equal(===):=Strick Equal is also use for the Comparison but with the comparison it also check the data type of the perticular variable. 
+//Example of Strick Equal(===)
+//let a=10 now we will perform an operation a==="10". the output of perticular operation will be False The reason is the value of variable a is 10. It is compared to 10 written in double-quotes, which is considered as a string, and therefore, the values are not strictly the same. The output of the program is false.
+
+
+// diff. between != vs !==
+// != when it is compared the lenght of the array it is used != operation.
+// !==  when it is comparing all elements of the array it is using !== operator.
+
+//diff. between greater than vs greater than equal
+//Greater than(>):= this operation is true if the left operand is greater than the right operand. In the other case it will give output as a false.
+// Example =if 10>9 true. 
+//Greater than equal(>=):=Returns true if the left operand is greater than or equal to the right operand
+// example = if 10>=10 true. //11>=10 true .//9>=10 False;
+
+//diff. between less than vs less than equal
+//less than(<):=this operation is true if the left operand is less than the right operand. In the other case it will give output as a false.
+//less than equal(<=):=Returns true if the left operand is less than or equal to the right operand.
 ```
 
 
