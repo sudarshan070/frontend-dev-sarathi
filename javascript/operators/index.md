@@ -74,22 +74,18 @@ console.log(a--) // 4
 
  x **= 2 // x would be 25
    
-   //Add Assignment Operators example function sum(a + b){}
-   let sum = 0 
+  
+ let sum = 0 
 
-for(let i = 1; i <= 5; i++)
-{
+for(let i = 1; i <= 5; i++){
  sum += i
 } 
-console.log(sum)// statement is use to print the output of our program.
-//This is the simple loop addition program in js with the increasing of i++ our sum will also increases upto the given last condition.
+console.log(sum)// 15
 
-for(let i=1; i<= 5 ++i)
-{
-sum+ =i;
+for(let i=1; i<= 5 ++i){
+ sum+ =i;
 }
-console.log(sum)
-// In this secound example we can see the little change, will it effect for output. The answer is no both the answer will be same as above.
+console.log(sum) // 15
 
 
  ```
@@ -134,10 +130,12 @@ a <= b; // returns true
 a >= c; // returns true
 
 a <= c; // returns true
+```
 
-//Now let us understand What is the difference between  Equal(==) vs Strick Equal (===)
-//If we look according to there operation both does same work but there is a small difference which make them different 
-// Equal(==):= This is  used for comparison purposes. == compares two variables irrespective of data type,it has the simple operation of comparison.
+  **Now let us understand What is the difference between Equal(==) vs Strick Equal (===)**
+  
+  If we look according to there operation both does same work but there is a small difference which make them different. 
+  Equal(==):= This is  used for comparison purposes. == compares two variables irrespective of data type,it has the simple operation of comparison.
 //Example of Equal(==)
 // TO understand it more clearly we will consider a simplke example 
 // let a=10 We have to perform the operation of comparision a==10; the output of perticular example is true because it will compare  10 with the value of a Which is 10 .
@@ -161,7 +159,6 @@ a <= c; // returns true
 //diff. between less than vs less than equal
 //less than(<):=this operation is true if the left operand is less than the right operand. In the other case it will give output as a false.
 //less than equal(<=):=Returns true if the left operand is less than or equal to the right operand.
-```
 
 
 ### Logical Operators
