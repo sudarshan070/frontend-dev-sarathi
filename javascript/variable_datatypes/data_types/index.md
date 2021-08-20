@@ -35,6 +35,12 @@ Double and single quotes are “simple” quotes. There’s practically no diffe
 Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}.
 
 ```js
+let str1 = "It's alright"; //It's alright
+let str2 = "He is called 'Johnny'"; //He is called 'Johnny
+let str33 = 'He is called "Johnny"'; //He is called "Johnny
+```
+
+```js
 let userName = "Sachin"
 
 console.log(`Hello, ${userName}`) // "Hello, Sachin"
@@ -59,6 +65,11 @@ alert("Hello" / 23) // NaN
 The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary precision.  (The numbers between -(2^53 − 1) and 2^53 − 1.)
 A BigInt is created by appending n to the end of an integer or by calling the constructor.
 
+```js
+var bigNum = BigInt(
+  "123422222222222222222222222222222222222");
+console.log(bigNum); //123422222222222222222222222222222222222n
+```
 
 ### undefined
 
