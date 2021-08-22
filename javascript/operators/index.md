@@ -132,35 +132,6 @@ a >= c; // returns true
 a <= c; // returns true
 ```
 
-  **Now let us understand What is the difference between Equal(==) vs Strick Equal (===)**
-  
-  If we look according to there operation both does same work but there is a small difference which make them different. 
-  
-  **Equal(==)**
-  
-  This is used for comparison purposes.
-  `Equal ==` compares two variables irrespective of data type,it has the simple operation of comparison.
-
-  **Strick Equal(===)**
-  
- `Strick Equal(===)` is also use for the Comparison but with the comparison it also check the data type of the perticular variable. 
-  If value is same but data type is differnt it will return false. e.g. ` 10 === "10"` output is false 
-
-
-  difference between != vs !==
- != when it is compared the lenght of the array it is used != operation.
-  !==  when it is comparing all elements of the array it is using !== operator.
-
-diff. between greater than vs greater than equal
-Greater than(>):= this operation is true if the left operand is greater than the right operand. In the other case it will give output as a false.
-Example =if 10>9 true. 
-Greater than equal(>=):=Returns true if the left operand is greater than or equal to the right operand
-example = if 10>=10 true. //11>=10 true .//9>=10 False;
-
- diff. between less than vs less than equal
-less than(<):=this operation is true if the left operand is less than the right operand. In the other case it will give output as a false.
-less than equal(<=):=Returns true if the left operand is less than or equal to the right operand.
-
 
 ### Logical Operators
 
