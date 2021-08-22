@@ -38,11 +38,8 @@ Backticks are “extended functionality” quotes. They allow us to embed variab
 let str1 = "It's alright"; //It's alright
 let str2 = "He is called 'Johnny'"; //He is called 'Johnny
 let str33 = 'He is called "Johnny"'; //He is called "Johnny
-```
 
-```js
 let userName = "Sachin"
-
 console.log(`Hello, ${userName}`) // "Hello, Sachin"
 ```
 
@@ -66,8 +63,7 @@ The BigInt type is a numeric primitive in JavaScript that can represent integers
 A BigInt is created by appending n to the end of an integer or by calling the constructor.
 
 ```js
-var bigNum = BigInt(
-  "123422222222222222222222222222222222222");
+var bigNum = BigInt("123422222222222222222222222222222222222");
 console.log(bigNum); //123422222222222222222222222222222222222n
 ```
 
@@ -134,4 +130,3 @@ typeof null // object
 ### Why is null an object
 
 This is a bug which states that null is an object and one that unfortunately can’t be fixed because it would break the existing code of people.
-```
