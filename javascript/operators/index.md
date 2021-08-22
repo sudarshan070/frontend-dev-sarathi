@@ -73,7 +73,23 @@ console.log(a--) // 4
  x %= 2; //x would be 1
 
  x **= 2 // x would be 25
+   
+  
+ let sum = 0 
+
+for(let i = 1; i <= 5; i++){
+ sum += i
+} 
+console.log(sum)// 15
+
+for(let i=1; i<= 5 ++i){
+ sum+ =i;
+}
+console.log(sum) // 15
+
+
  ```
+
 
 
  ### Comparison Operators
